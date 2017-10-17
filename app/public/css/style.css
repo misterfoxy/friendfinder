@@ -1,0 +1,22 @@
+html, body{
+  height:100%;
+}
+#logo{
+  margin-left: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #efefef
+}
+i{
+  margin-left: 10px;
+}
+
+#introduction{
+  margin-top: 40px;
+}
+
+#introuction .container{
+  min-height: 90%;
+}

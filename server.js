@@ -17,6 +17,7 @@ app.use(bodyParser.text());
 
 // load view routes
 require(path.join(__dirname,'./app/routes/htmlroutes'))(app);
+require(path.join(__dirname, './app/routes/apiroutes'))(app);
 
 // initiate server
 
