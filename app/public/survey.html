@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Mark it zero, dude</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
   </head>
   <body>
@@ -229,15 +229,25 @@
 
   <script>
 
-    $(document).ready(function(){
-
+    $(document).ready(function() {
+      console.log("up");
       $('select').material_select();
+      
+      $('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+    });
 
       $('#submitButton').on("click", function(e){
         e.preventDefault();
         let userInput = {
-          name: $('#userName').val().trim();
-          photo: $('#userPhoto').val().trim();
+          name: $('#userName').val().trim(),
+          photo: $('#userPhoto').val().trim(),
           scores:[
             $('#question1').val().trim(),
             $('#question2').val().trim(),
@@ -259,11 +269,11 @@
           $('#userMatchImage').attr('src', data.matchImage);
           $('#modal1').modal('open');
         });
-        
+
       });
 
 
-    });
+
 
   </script>
 </html>
