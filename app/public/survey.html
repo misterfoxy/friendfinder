@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Survey</title>
+    <title>Mark it zero, dude</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
@@ -15,7 +15,7 @@
   				<i class="fa fa-address-book-o fa-3x" aria-hidden="true" id=logo-icon></i>
   				<a href="/" class="brand-logo" id="logo">Home</a>
   				<ul class="right hide-on-med-and-down" id="head-nav-links">
-  					<li><a href="/survey">Survey</a></li>
+  					<li><a href="/survey">QUIZ</a></li>
   					<li><a href="/api/friends">API Friends List</a></li>
   					<li><a href="https://github.com/misterfoxy/friendfinder">GitHub Repo</a></li>
   				</ul>
@@ -28,7 +28,7 @@
   			<div class="row">
   				<div class="col s12 z-depth-5 mainpanel">
   					<div id="mainpanel-content">
-  						<h1>Survey Questions</h1>
+  						<h1>Quiz</h1>
   						<div class="divider"></div>
 
   						<h3>About You</h3>
@@ -215,7 +215,7 @@
   	<!-- Modal Dialog Displaying Closest Friend Match -->
   	<div id="modal1" class="modal">
   		<div class="modal-content">
-  			<h4>Closest Friend Match</h4>
+  			<h4>Your character is...</h4>
   			<div class="divider"></div>
   			<h5 id="userMatch"></h5>
   			<img id="userMatchImage" class="materialboxed" width="650" src="">
@@ -229,10 +229,41 @@
 
   <script>
 
-
     $(document).ready(function(){
+
       $('select').material_select();
 
+      $('#submitButton').on("click", function(e){
+        e.preventDefault();
+        let userInput = {
+          name: $('#userName').val().trim();
+          photo: $('#userPhoto').val().trim();
+          scores:[
+            $('#question1').val().trim(),
+            $('#question2').val().trim(),
+            $('#question3').val().trim(),
+            $('#question4').val().trim(),
+            $('#question5').val().trim(),
+            $('#question6').val().trim(),
+            $('#question7').val().trim(),
+            $('#question8').val().trim(),
+            $('#question9').val().trim(),
+            $('#question10').val().trim()
+          ]
+        };
+
+        // add user inputs to listen
+
+        $.post('/api/friends', userInput).done(function(data){
+          $('#userMatch').html(data.matchName);
+          $('#userMatchImage').attr('src', data.matchImage);
+          $('#modal1').modal('open');
+        });
+        
+      });
+
+
     });
+
   </script>
 </html>

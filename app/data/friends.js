@@ -1,7 +1,7 @@
 const friends = [
 	{
-		name: 'Scooter',
-		photo: 'http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg',
+		name: 'Walter',
+		photo: 'https://cdn.costumewall.com/wp-content/uploads/2017/01/walter-sobchak.jpg',
 		scores: [
 			'1',
 			'5',
@@ -16,8 +16,8 @@ const friends = [
 		]
 	},
 	{
-		name: 'Fluffy',
-		photo: 'https://i.ytimg.com/vi/mRf3-JkwqfU/hqdefault.jpg',
+		name: 'The Dude',
+		photo: 'https://images.moviepilot.com/image/upload/c_fill,h_470,q_auto:good,w_620/nkjdachvtkv8hcv5kz20.jpg',
 		scores: [
 			'2',
 			'4',
@@ -32,8 +32,8 @@ const friends = [
 		]
 	},
 	{
-		name: 'Spencer',
-		photo: 'http://cdn3-www.cattime.com/assets/uploads/2011/08/best-kitten-names-1.jpg',
+		name: 'Donny',
+		photo: 'http://i.imgur.com/UAlQnDC.jpg',
 		scores: [
 			'4',
 			'3',
@@ -48,8 +48,8 @@ const friends = [
 		]
 	},
 	{
-		name: 'Zackariah',
-		photo: 'https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg',
+		name: 'The Jesus',
+		photo: 'http://www.indiewire.com/wp-content/uploads/2016/08/jesus.png?w=780',
 		scores: [
 			'5',
 			'1',
@@ -64,8 +64,8 @@ const friends = [
 		]
 	},
 	{
-		name: 'Cloe',
-		photo: 'http://4.bp.blogspot.com/-HTvSYzA-pO4/UgQb4Zh_u0I/AAAAAAAAEuI/XwhtogT_1tA/s1600/3+cute2.jpg',
+		name: 'Maude',
+		photo: 'https://vignette1.wikia.nocookie.net/p__/images/3/3e/MaudeLebowski.jpg/revision/latest?cb=20160125203537&path-prefix=protagonist',
 		scores: [
 			'1',
 			'1',
@@ -79,73 +79,10 @@ const friends = [
 			'1'
 		]
 	},
+
 	{
-		name: 'Mrs. Piggy',
-		photo: 'http://img.mindbodygreen.com/image/upload/c_limit,w_738,f_auto/ftr/Miss-Piggy-large-tonya-312.jpg',
-		scores: [
-			'1',
-			'1',
-			'5',
-			'1',
-			'3',
-			'2',
-			'5',
-			'1',
-			'1',
-			'5'
-		]
-	},
-	{
-		name: 'Beyonce Knowles',
-		photo: 'http://www.billboard.com/files/styles/article_main_image/public/media/beyonce-feb-2014-billboard-650.jpg',
-		scores: [
-			'5',
-			'4',
-			'4',
-			'2',
-			'4',
-			'4',
-			'3',
-			'2',
-			'3',
-			'3'
-		]
-	},
-	{
-		name: 'Adele Adkins',
-		photo: 'https://i1.imgiz.com/data/videoshots/6829/6829475-6461.jpg',
-		scores: [
-			'5',
-			'2',
-			'3',
-			'1',
-			'5',
-			'1',
-			'3',
-			'1',
-			'1',
-			'5'
-		]
-	},
-	{
-		name: 'Kermit the Frog',
-		photo: 'http://i.dailymail.co.uk/i/pix/2015/09/02/08/2BE5406100000578-3218820-image-m-25_1441179775589.jpg',
-		scores: [
-			'5',
-			'5',
-			'5',
-			'5',
-			'5',
-			'5',
-			'5',
-			'5',
-			'5',
-			'5'
-		]
-	},
-	{
-		name: 'Elmo',
-		photo: 'http://1rjm5qg4v8732kpmn44ya6bj-wpengine.netdna-ssl.com/wp-content/uploads/2012/11/elmo-6601.png',
+		name: 'The Big Lebowski',
+		photo: 'https://d3imyo1kk0rcam.cloudfront.net/wp-content/uploads/2012/06/e65df185026314d16ac6b385df71aa181309040639.jpg',
 		scores: [
 			'1',
 			'1',
